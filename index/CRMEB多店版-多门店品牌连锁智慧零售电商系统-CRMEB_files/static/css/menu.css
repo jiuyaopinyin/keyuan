@@ -1,0 +1,445 @@
+[v-cloak] {
+    display: none !important;
+}
+
+#header-text .nav_text .notice {
+    /* display: none; */
+    position: relative;
+    cursor: pointer;
+    background: none;
+}
+
+#header-text .nav_text .small {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+#header-text .notice .icontixing {
+    font-size: 18px;
+}
+
+#header-text .notice .notice-num {
+    background-color: #f56c6c;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#header-text .notice .item {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#header-text .news-box {
+    width: 320px;
+    padding: 10px 24px;
+    font-size: 12px;
+    line-height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 23px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ebeef5;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    z-index: 100;
+}
+
+#header-text .news-box .line1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#header-text .news-box .arrow {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-bottom-color: #fff;
+    border-style: solid;
+    border-width: 6px;
+    filter: drop-shadow(0 2px 12px rgba(0, 0, 0, .03));
+}
+
+#header-text .news-box .title-box {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    color: #282828;
+}
+
+#header-text .news-box .title-box::after {
+    content: ' ';
+    position: absolute;
+    left: 10px;
+    bottom: -2px;
+    width: 14px;
+    height: 1px;
+    background: #2A8AEF;
+}
+
+#header-text .news-box .news-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #EEEEEE;
+    color: #666666;
+    cursor: pointer;
+}
+
+#header-text .news-box .news-item .txt {
+    color: #666666;
+    flex: 1;
+}
+
+#header-text .news-box .news-item .time {
+    margin-left: 22px;
+    color: #999999;
+    font-size: 12px;
+    width: 50px;
+}
+
+#header-text .news-box .news-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: #555;
+}
+
+#header-text .news-box .news-foot .iconfont {
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+#header-text .nav_avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+#header-text .nav_avatar .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+#header-text .nav_text {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    line-height: 66px;
+    margin-right: 15px;
+}
+
+
+#header-text .nav_text .news-box .news-foot .iconfont {
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+
+.user-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+.user-center {
+    width: 360px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("/static/images/materials.png");
+    background-repeat: no-repeat;
+    background-size: 100% 76px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 0 20px 50px;
+}
+
+.user-center::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.user-center::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #CCCCCC;
+}
+
+.user-center::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}
+
+.user-center .header {
+    padding: 16px 0;
+}
+
+.user-center .header .head-title {
+    color: #303133;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.user-center .header .iconfont {
+    color: #999999;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.drawer-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.drawer-container .drawer-item {
+    border-bottom: 1px dashed #EBEEF5;
+    position: relative;
+}
+
+.drawer-container .drawer-item .icon-jinru2 {
+    font-size: 10px;
+    color: #bbbbbb;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 5px;*/
+}
+
+.drawer-container .drawer-item .gengduo {
+    font-size: 10px;
+    color: #bbbbbb;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.drawer-container .drawer-item .head {
+    align-items: center;
+    cursor: pointer;
+}
+
+.drawer-container .drawer-item .head .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.drawer-container .drawer-item .head .head-text {
+    margin-left: 10px;
+}
+
+.drawer-container .drawer-item .head .head-text .text {
+    align-items: center;
+}
+
+.drawer-container .drawer-item .head .head-text .level {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+
+.drawer-container .drawer-item .head .head-text .name {
+    color: #333333;
+    font-size: 14px;
+}
+
+.drawer-container .drawer-item .head .head-text .count {
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.drawer-container .drawer-item .head .head-text .head-pro {
+    margin-top: 5px;
+    max-width: 255px;
+}
+
+.drawer-container .drawer-item .head .head-text .pro-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.drawer-container .drawer-ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-container .drawer-ul .item {
+    font-size: 13px;
+    color: #666666;
+    text-align: left;
+}
+
+.drawer-container .drawer-ul .item.item3 {
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+}
+
+.drawer-container .drawer-ul .item.item3:last-child {
+    margin-right: 0;
+}
+
+.drawer-container .drawer-ul .item.item-message {
+    margin-right: 60px;
+}
+
+.drawer-container .drawer-ul .item .text-blue {
+    display: block;
+    margin-top: 9px;
+    font-weight: bold;
+    color: #1890FF;
+    font-size: 16px;
+}
+
+.drawer-container .drawer-ul .item .text-count {
+    color: #333333;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.drawer-container .drawer-ul .item.item4 {
+    width: 25%;
+}
+
+.drawer-container .drawer-ul .item.item100 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.drawer-container .drawer-ul .item.item100 .text-blue {
+    margin: 0 0 0 5px;
+}
+
+.drawer-container .text-link {
+    color: #1890FF;
+    font-size: 12px;
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1890FF;
+    border-radius: 2px;
+    margin-left: 5px;
+    background: none;
+    line-height: 20px;
+}
+
+.drawer-container .text-link.copy {
+    cursor: pointer;
+}
+
+.drawer-container .item-head {
+    margin-top: 26px;
+    align-items: center;
+    /*cursor: pointer;*/
+    position: relative;
+}
+
+.drawer-container .item-head .title-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.drawer-container .item-head .title {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.drawer-container .service {
+    margin-top: 24px;
+    align-items: center;
+}
+
+.drawer-container .service .service-name {
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.drawer-container .service .label {
+    width: 70px;
+    height: 15px;
+}
+
+.drawer-container .ul-head {
+    margin: 20px 0;
+}
+
+.drawer-container .ul-message {
+    margin: 25px 0 20px;
+}
+
+.drawer-container .ul-items {
+    margin: 24px 0 20px;
+}
+
+.drawer-container .ul-text {
+    margin: 5px 0 20px;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    background: #fff;
+    /*border-top: 1px solid #e1e1e1;*/
+    padding-top: 4px;
+    height: 50px;
+    width: 360px;
+}
+
+.foot .loginout {
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    background: none;
+    cursor: pointer;
+}
